@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import UserSocials from "../_components/UserSocials";
+import RetroGrid from "@/components/RetroGrid";
 
 export async function generateMetadata({
   params,
@@ -12,8 +13,10 @@ export async function generateMetadata({
 }
 export default function Page({ params }: { params: { username: string } }) {
   return (
-    <div>
-      <UserSocials userDataName={params.username} />
-    </div>
+    <>
+      <div>
+        <UserSocials userDataName={params.username} />
+      </div>
+    </>
   );
 }

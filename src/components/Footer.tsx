@@ -26,7 +26,7 @@ export default function Footer() {
           </p>
         </div>
       </div>
-      <ul className="text-sm grid gap-1">
+      <ul className=" flex flex-row-reverse text-sm gap-5">
         <li className="hover:underline hover:text-primary text-sm">
           <Link href="https://github.com/Avik-creator/socials">
             Fix This Web
@@ -38,7 +38,7 @@ export default function Footer() {
           </Link>
         </li>
       </ul>
-      <p className="text-xs">
+      <p className="flex justify-center text-xs">
         &copy; {new Date().getFullYear()}{" "}
         <Link href="/" className="text-primary hover:underline">
           Socials

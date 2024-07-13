@@ -122,6 +122,10 @@ module.exports = {
           "0%, 100%": { backgroundPosition: "0% 0%" },
           "50%": { backgroundPosition: "100% 100%" },
         },
+        grid: {
+          "0%": { transform: "translateY(-50%)" },
+          "100%": { transform: "translateY(0)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -129,6 +133,8 @@ module.exports = {
         pulseGlow: "pulseGlow 1.75s infinite cubic-bezier(0.66, 0, 0, 1)",
         spinner: "spinner 1.2s linear infinite",
         skeleton: "skeleton 8s ease-in-out infinite",
+
+        grid: "grid 15s linear infinite",
       },
     },
   },

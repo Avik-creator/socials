@@ -1,7 +1,10 @@
 import { ArrowRight } from "lucide-react";
 import { Button } from "./ui/button";
+import Image from "next/image";
 import Link from "next/link";
 import { currentUser } from "@clerk/nextjs/server";
+import RetroGrid from "./RetroGrid";
+import DemoImage from "./DemoImage";
 
 export default async function Hero() {
   const user = await currentUser();
@@ -42,6 +45,11 @@ export default async function Hero() {
           </Link>
         </Button>
       </div>
+
+      <div className="mt-20 bg-secondary/40 p-1 rounded-md w-fit mx-auto">
+        <DemoImage />
+      </div>
+      <RetroGrid />
     </div>
   );
 }

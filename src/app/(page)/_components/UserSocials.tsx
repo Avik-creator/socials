@@ -1,7 +1,7 @@
 "use client";
 
 import Logo from "@/components/Logo";
-import { ModeToggle } from "@/components/ModeToggle";
+
 import { Button } from "@/components/ui/button";
 import { Skeleton } from "@/components/ui/skeleton";
 import {
@@ -145,7 +145,7 @@ export default function UserSocials({
           </Button>
         </div>
       )}
-      <div className="mt-32 grid place-content-center text-center -mb-10">
+      <div className="mt-32 grid place-content-center text-center">
         <Logo />
         <p className="text-xs">
           Made with ❤️ by <a href="https://github.com/Avik-creator">Avik</a>
